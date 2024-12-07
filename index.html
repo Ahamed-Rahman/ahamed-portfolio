@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahamed - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Ahamed</h1>
+            </div>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Crafting Code, Fueling Innovation</h2>
+                <p>I'm Ahamed, a software engineer passionate about building solutions for the future.</p>
+                <a href="#contact" class="btn">Get In Touch</a>
+            </div>
+        </section>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="images/ahamed.jpeg" alt="Ahamed's profile picture" class="profile-pic">
+            <p>Hello! I am a second-year Software Engineering student from SLIIT. I specialize in full-stack development with a focus on MERN stack, mobile app development, and wireframing with Figma and Visily. I have successfully completed a Fuel Station Management System and am currently working on a Payroll System for a garment company.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Fuel Station Management System (MERN Stack)</h3>
+            <p>A comprehensive inventory management solution for a fuel station, built using MongoDB, Express, React, and Node.js.</p>
+        </div>
+        <div class="project-card">
+            <h3>Payroll System for Garment Company</h3>
+            <p>Currently developing a payroll system tailored for the garment industry to streamline employee management and payroll processing.</p>
+        </div>
+        <div class="project-card">
+            <h3>Task Management App (Android Studio)</h3>
+            <p>A task management app built with Room Database to organize and track daily tasks.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to reach out using the form below or through my email!</p>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:ahamedwebsite2002@gmail.com">ahamedwebsite2002@gmail.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Location: Kandy, Sri Lanka</p>
+            </div>
+            <div class="contact-form">
+                <form action="#">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Ahamed | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
