@@ -1,92 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahamed - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Add FontAwesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ahamed - Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>Ahamed</h1>
-            </div>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <section class="hero">
-            <div class="hero-text">
-                <h2>Crafting Code, Fueling Innovation</h2>
-                <p>I'm Ahamed, a software engineer passionate about building solutions for the future.</p>
-                <a href="#contact" class="btn">Get In Touch</a>
-            </div>
-        </section>
-    </header>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="nav-inner">
+        <div class="logo"><h1>Ahamed</h1></div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
 
-    <!-- About Me Section -->
-    <section id="about" class="about-section">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <img src="images/ahamed.jpeg" alt="Ahamed's profile picture" class="profile-pic">
-            <p>Hello! I am a second-year Software Engineering student from SLIIT. I specialize in full-stack development with a focus on MERN stack, mobile app development, and wireframing with Figma and Visily. I have successfully completed a Fuel Station Management System and am currently working on a Payroll System for a garment company.</p>
-        </div>
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle color theme" aria-pressed="false">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+          <span class="toggle-text">Dark</span>
+        </button>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <!-- animated ribbons (background accents) -->
+      <div class="ribbon" aria-hidden="true"></div>
+      <div class="ribbon-2" aria-hidden="true"></div>
+
+      <div class="hero-text">
+        <h2>Crafting Code, Fueling Innovation</h2>
+        <p>
+          I'm Ahamed, a Computer Science graduate passionate about full-stack development, AI, and mobile applications.
+          Currently interning at CurveUp Pvt Ltd, I contribute to real-world software projects while building innovative solutions for the future.
+        </p>
+        <a href="#contact" class="btn">Get In Touch</a>
+      </div>
     </section>
+  </header>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Fuel Station Management System (MERN Stack)</h3>
-            <p>A comprehensive inventory management solution for a fuel station, built using MongoDB, Express, React, and Node.js.</p>
+  <!-- About -->
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="images/ahamed.jpeg" alt="Ahamed profile" class="profile-pic"/>
+      <div>
+        <p>
+          Hello! I am F. R. Ahamed, a Computer Science graduate (University of Bedfordshire) with an HND in Computing (SLIIT).
+          My expertise spans full-stack development (MERN), React Native, cloud deployment, and UI/UX with Figma.
+          At CurveUp Pvt Ltd, I’ve supported mobile app launches, handled data preparation for deployments, and provided technical support.
+          I enjoy solving problems and leading Agile projects end-to-end.
+        </p>
+        <div class="links-row">
+          <a class="link-chip" href="mailto:ahamedwebsite2002@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+          <a class="link-chip" href="https://github.com/Ahamed-Rahman" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+          <a class="link-chip" href="http://www.linkedin.com/in/ahamedrahman" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
         </div>
-        <div class="project-card">
-            <h3>Payroll System for Garment Company</h3>
-            <p>Currently developing a payroll system tailored for the garment industry to streamline employee management and payroll processing.</p>
-        </div>
-        <div class="project-card">
-            <h3>Task Management App (Android Studio)</h3>
-            <p>A task management app built with Room Database to organize and track daily tasks.</p>
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <h2>Contact Me</h2>
-        <p>If you'd like to get in touch, feel free to reach out using the form below or through my email!</p>
-        <div class="contact-container">
-            <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:ahamedwebsite2002@gmail.com">ahamedwebsite2002@gmail.com</a></p>
-                <p><i class="fas fa-map-marker-alt"></i> Location: Kandy, Sri Lanka</p>
-            </div>
-            <div class="contact-form">
-                <form action="#">
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
+  <!-- Experience -->
+  <section id="experience" class="experience-section">
+    <h2>Work Experience</h2>
+    <div class="experience-card fade-in">
+      <h3>IT Intern — CurveUp Pvt Ltd <span class="time-range">(2025 – Present)</span></h3>
+      <ul>
+        <li>Supported app launches on Google Play Store & Apple App Store as part of the app team.</li>
+        <li>Assisted with data arrangement/preparation for deployment and testing.</li>
+        <li>Provided technical support for onboarding and troubleshooting.</li>
+        <li>Participated in team meetings, sharing feedback and technical insights.</li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2024 Ahamed | All Rights Reserved</p>
-    </footer>
+  <!-- Skills -->
+  <section id="skills" class="skills-section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card fade-in">
+        <h3><i class="fas fa-code"></i> Programming & Frameworks</h3>
+        <p>JavaScript (ES6+), Node.js, React.js, React Native, Express.js, Python</p>
+      </div>
+      <div class="skill-card fade-in">
+        <h3><i class="fas fa-database"></i> Databases</h3>
+        <p>MongoDB, MySQL</p>
+      </div>
+      <div class="skill-card fade-in">
+        <h3><i class="fas fa-toolbox"></i> Tools & Platforms</h3>
+        <p>Git & GitHub, Postman, Docker (basic), VS Code, Figma</p>
+      </div>
+      <div class="skill-card fade-in">
+        <h3><i class="fas fa-cogs"></i> Other</h3>
+        <p>REST API Development, Agile/Scrum, AI/ML fundamentals, Cloud deployment (basic AWS/GCP)</p>
+      </div>
+      <div class="skill-card fade-in">
+        <h3><i class="fas fa-users"></i> Soft Skills</h3>
+        <p>Communication, Leadership, Teamwork, Problem-Solving, Time Management, Adaptability, Creativity, Analytical Thinking, Conflict Resolution, Continuous Learning</p>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- Projects -->
+  <section id="projects" class="projects-section">
+    <h2>Projects</h2>
+    <div class="projects-wrap">
+      <div class="project-card fade-in">
+        <h3>Material Estimator App (MEA) – Final Year Project</h3>
+        <p>
+          MERN stack web app for ceiling/tile material estimation with custom algorithms and 2D visualization.
+          Includes dashboards, cost estimation, and multi-project management. AI optimization planned.
+        </p>
+        <a class="btn-outline" href="https://github.com/Ahamed-Rahman/Material-Estimator-App--MEA-" target="_blank" rel="noopener"><i class="fab fa-github"></i> View on GitHub</a>
+      </div>
+
+      <div class="project-card fade-in">
+        <h3>Math Quiz Game</h3>
+        <p>
+          Interactive MERN stack quiz game using Banana API for dynamic math questions.
+          Features real-time feedback, score tracking, and a leaderboard.
+        </p>
+        <a class="btn-outline" href="https://github.com/Ahamed-Rahman/IQ-Based-Math-Game" target="_blank" rel="noopener"><i class="fab fa-github"></i> View on GitHub</a>
+      </div>
+
+      <div class="project-card fade-in">
+        <h3>Siva Saloon Management System — Agile Group Project</h3>
+        <p>
+          Role: Project Manager & Backend Developer. Built authentication, booking, and online payment features with Node.js & MongoDB.
+          Adapted to online payments after client requirement changes.
+        </p>
+        <a class="btn-outline" href="https://github.com/Ahamed-Rahman/siva-saloon" target="_blank" rel="noopener"><i class="fab fa-github"></i> View on GitHub</a>
+      </div>
+
+      <div class="project-card fade-in">
+        <h3>Fuel Station Management System (HND Project)</h3>
+        <p>
+          Inventory management system built with the MERN stack to streamline operations and reporting.
+        </p>
+        <a class="btn-outline" href="https://github.com/Ahamed-Rahman/ZenoFuelStation_ITP" target="_blank" rel="noopener"><i class="fab fa-github"></i> View on GitHub</a>
+      </div>
+
+      <div class="project-card fade-in">
+        <h3>MindMap</h3>
+        <p>
+          A visualization and brainstorming tool for mapping ideas.
+        </p>
+        <a class="btn-outline" href="https://github.com/Ahamed-Rahman/MindMap" target="_blank" rel="noopener"><i class="fab fa-github"></i> View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <p>If you'd like to get in touch, reach out via the form or email me directly.</p>
+
+    <div class="contact-container">
+      <div class="contact-info fade-in">
+        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:ahamedwebsite2002@gmail.com">ahamedwebsite2002@gmail.com</a></p>
+        <p><i class="fas fa-map-marker-alt"></i> Location: Kandy, Sri Lanka</p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/Ahamed-Rahman" target="_blank" rel="noopener">github.com/Ahamed-Rahman</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="http://www.linkedin.com/in/ahamedrahman" target="_blank" rel="noopener">linkedin.com/in/ahamedrahman</a></p>
+      </div>
+
+      <div class="contact-form fade-in">
+        <form action="#">
+          <div class="form-group"><input type="text" name="name" placeholder="Your Name" required/></div>
+          <div class="form-group"><input type="email" name="email" placeholder="Your Email" required/></div>
+          <div class="form-group"><textarea name="message" rows="5" placeholder="Your Message" required></textarea></div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Ahamed | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
